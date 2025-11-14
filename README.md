@@ -41,12 +41,10 @@ Tercer paso: Criterios de aceptación (Given/When/Then)
 
 CA1. Volumen B/N: Dado 100 impresiones B/N, cuando calculo subtotal, entonces uso $150 c/u → $15.000.  
 CA2. Volumen Color: Dado 50 impresiones Color, cuando calculo subtotal, entonces uso $400 c/u → $20.000.  
-CA3. Descuento 10%: Dado 20 B/N + 10 Color + 1 Anillado, cuando calculo total final, entonces aplica 10% (total bruto = $20.000 → total final = $18.000).  
-CA4. Descuento 5%: Dado 200 B/N (sin anillado), total bruto = $30.000, cuando calculo, entonces aplica 5% → $28.500.  
-CA5. Sin descuento: Dado 10 B/N + 1 Anillado, cuando calculo, entonces 0% descuento (total bruto = $5.000).  
-CA6. Bloqueo: Dado pedido CONFIRMADO, cuando intento agregar ítem, entonces se rechaza.  
-CA7. Validación: Dado cantidad 0 o negativa, cuando agrego ítem, entonces se rechaza.  
-CA8. Resumen: Dado pedido válido, cuando pido resumen, entonces muestra: cliente, ítems con precio aplicado, subtotales, total bruto, descuento (0%, 5% o 10%), total final.
+CA3. Sin descuento: Dado 10 B/N + 1 Anillado, cuando calculo, entonces 0% descuento (total bruto = $5.000).  
+CA4. Bloqueo: Dado pedido CONFIRMADO, cuando intento agregar ítem, entonces se rechaza.  
+CA5. Validación: Dado cantidad 0 o negativa, cuando agrego ítem, entonces se rechaza.  
+CA6. Resumen: Dado pedido válido, cuando pido resumen, entonces muestra: cliente, ítems con precio aplicado, subtotales, total bruto, descuento (0%, 5% o 10%), total final.
 
 Cuarto paso: Límite del diseño ≤ 5 clases
 
@@ -83,3 +81,12 @@ Estructura modular
  │   └─ PuntoComaService.java
  └─ app/
      └─ Main.java             (flujo de consola)
+
+![Imagen](./assets/PuntoComaImagen.jpeg)
+![CA1](./assets/CA1.PNG)
+![CA2](./assets/CA2.PNG)
+![CA3](./assets/CA3.PNG)
+![CA4](./assets/CA4.PNG)
+![CA5](./assets/CA5.PNG)
+![CA6](./assets/CA6.PNG)
+
